@@ -1,0 +1,87 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, TouchableOpacity, Image, ScrollView } from 'react-native';
+import Header from '../../../components/Header/Header';
+import Footer from '../../../components/Footer/Footer';
+
+export default function Haas({navigation}) {
+
+
+    return (
+    <ScrollView>
+        <View style={styles.container}></View>
+            <StatusBar style="auto" />
+            <Header/>
+            <View style={styles.content}>
+                <Text style={styles.title}>Bem-Vindo a página Haas!</Text>
+                <View style={styles.contentContainer}>
+                <Text style={styles.titleP}>Haas</Text>
+                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Text style={styles.para}>Histórico: Estreou em 2016 como a primeira equipe americana em décadas. Tem se mantido como uma equipe de meio de grid.{'\n'}
+                Pilotos 2025: Esteban Ocon (#31) e Oliver Bearman (#87);{'\n'}
+                Piloto reserva: Pietro Fittipaldi;{'\n'}
+                Piloto mais vitorioso: [Nenhuma vitória registrada];{'\n'}
+                Estatísticas: Nenhum título de Construtores ou Pilotos, 0 vitórias em GPs.{'\n'}</Text>
+            </View>
+            <View style={styles.buttonContainer}>
+                    <Text style={styles.titleP}>Confira os Pilotos!</Text>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Esteban Ocon</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Oliver Bearman</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+            </View>
+            <Footer/>
+        </View>
+    </ScrollView>
+    );
+}
+
+const styles = StyleSheet.create({
+    title:{
+        fontSize:30,
+        alignSelf:'center',
+        marginTop:20,
+        color:'#E00700',
+        width:'80%',
+    },
+    titleP:{
+        fontSize:30,
+        alignSelf:'center',
+        marginTop:20,
+        color:'#E00700',
+        width:'80%',
+    },
+    para:{
+        fontSize:18,
+        alignSelf:'center',
+        marginTop:20,
+        color:'#E00700',
+        width:'80%'
+    }
+    ,
+    container:{
+        flex:2,
+        backgroundColor:'#F2EEEB',
+    },
+    content:{
+        flex:2,
+    },
+    contentContainer:{
+        flex:2,
+        justifyContent:'space-evenly',
+    },
+    img:{
+        width:300,
+        height:150,
+        alignSelf:'center',
+    },
+    buttonText:{
+        color:'#F2EEEB',
+        textAlign:'center',
+        fontSize:30,
+        backgroundColor:'#E00700',
+        width:"80%",
+        borderRadius:8,
+        padding: 6,
+        alignSelf:'center',
+        margin:20,
+      },
+  });
