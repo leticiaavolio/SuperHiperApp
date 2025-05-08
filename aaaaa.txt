@@ -1,0 +1,12 @@
+
+      {/* <View style={styles.container}>
+                    <StatusBar style="auto" />
+                    <Header/>
+                    <View style={styles.content}>
+                        <Text style={styles.title}>Bem-Vindo a página da História da Formula 1!</Text>
+                        <View style={styles.buttonContainer}>
+                            
+                        </View>
+                    </View>
+                    <Footer/>
+    </View> */}

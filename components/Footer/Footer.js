@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
         alignItems:'center',
       },
     footerText:{
-        color:'#fff',
+        color:'#F2EEEB',
         fontSize:18,
       },
 })
