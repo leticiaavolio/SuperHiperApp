@@ -15,7 +15,7 @@ export default function Ferrari({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Ferrari!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Ferrari</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/ferrari.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: A Scuderia Ferrari é a equipe mais antiga e vitoriosa da F1, presente desde 1950. Apesar de um jejum de títulos, continua sendo uma força tradicional no grid.{'\n'}
                 Pilotos 2025: Charles Leclerc (#16) e Lewis Hamilton (#44);{'\n'}
                 Piloto reserva: Antonio Giovinazzi e Robert Shwartzman;{'\n'}
@@ -24,9 +24,10 @@ export default function Ferrari({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Lewis Hamilton</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Charles Leclerc</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('LewisHam')}>Lewis Hamilton</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('CharlesLec')}>Charles Leclerc</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

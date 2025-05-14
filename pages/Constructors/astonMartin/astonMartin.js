@@ -15,7 +15,7 @@ export default function AstonMartin({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Aston Martin!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Aston Martin</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/astonmartin.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: Retornou à F1 em 2021, após rebranding da Racing Point. Tem investido fortemente para se tornar uma equipe de ponta.{'\n'}
                 Pilotos 2025: Fernando Alonso (#14) e Lance Stroll (#18);{'\n'}
                 Piloto reserva: Felipe Drugovich;{'\n'}
@@ -24,9 +24,10 @@ export default function AstonMartin({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Fernando Alonso</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Lance Stroll</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('FernandoAlo')}>Fernando Alonso</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('LanceStr')}>Lance Stroll</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

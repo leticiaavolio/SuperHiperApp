@@ -29,6 +29,7 @@ export default function Historia({navigation}) {
                 <Text style={styles.para}>Ao longo de mais de 70 anos de história, a Fórmula 1 teve pilotos que marcaram época com seu talento, carisma e conquistas. Entre os mais vitoriosos está Michael Schumacher, heptacampeão mundial (1994, 1995, 2000–2004), que dominou a categoria com a Ferrari nos anos 2000. Outro nome histórico é Juan Manuel Fangio, que venceu 5 campeonatos na década de 1950, um recorde que durou quase 50 anos. O brasileiro Ayrton Senna também é lembrado como um dos maiores de todos os tempos, não apenas por seus 3 títulos, mas por sua habilidade em pistas molhadas e sua paixão pela velocidade. Mais recentemente, Lewis Hamilton igualou Schumacher com 7 títulos e se tornou o maior vencedor em número de corridas, com mais de 100 vitórias. Outros nomes marcantes incluem Alain Prost, Niki Lauda, Jackie Stewart e Nelson Piquet, todos multicampeões e referências em suas gerações.</Text>
                 </View>
                 <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View> 

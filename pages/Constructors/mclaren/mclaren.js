@@ -15,7 +15,7 @@ export default function Mclaren({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Mclaren!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Mclaren Mercedes</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/mclaren2.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: Fundada em 1963 por Bruce McLaren, a McLaren é uma das equipes mais tradicionais da F1. Após um período de reconstrução, conquistou o Campeonato de Construtores em 2024, seu primeiro desde 1998.{'\n'}
                 Pilotos 2025: Oscar Piastri (#81) e Lando Norris (#4);{'\n'}
                 Piloto reserva: Ryo Hirakawa e Pato O’Ward;{'\n'}
@@ -24,9 +24,10 @@ export default function Mclaren({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Oscar Piastri</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Lando Norris</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('OscarPia')}>Oscar Piastri</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('LandoNor')}>Lando Norris</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

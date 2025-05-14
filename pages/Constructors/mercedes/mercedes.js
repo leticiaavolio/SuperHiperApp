@@ -15,7 +15,7 @@ export default function Mercedes({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Mercedes!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Mercedes</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/mercedes.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: Dominante na era híbrida (2014–2020), a Mercedes conquistou 8 títulos consecutivos de Construtores. Atualmente, busca retornar ao topo após desafios recentes.{'\n'}
                 Pilotos 2025: George Russell (#63) e Andrea Kimi Antonelli (#12);{'\n'}
                 Piloto reserva: Mick Schumacher e Valteri Bottas;{'\n'}
@@ -24,9 +24,10 @@ export default function Mercedes({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>George Russel</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Kimi Antonelli</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('GeorgeRus')}>George Russell</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('KimiAnt')}>Kimi Antonelli</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

@@ -15,7 +15,7 @@ export default function Sauber({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Sauber!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Kick Sauber</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/sauber.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: Com raízes na Sauber, a equipe passou por várias parcerias e rebrandings. Em 2025, compete como Kick Sauber.{'\n'}
                 Pilotos 2025: Nico Hulkenberg (#27) e Gabriel Bortoleto (#05);{'\n'}
                 Piloto reserva: Zane Maloney e Theo Pourchaire;{'\n'}
@@ -24,9 +24,10 @@ export default function Sauber({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Nico Hulkenberg</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Gabriel Bortoleto</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('NicoHul')}>Nico Hulkenberg</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('GabrielBor')}>Gabriel Bortoleto</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

@@ -15,7 +15,7 @@ export default function Haas({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página Haas!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Haas</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/haas.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: Estreou em 2016 como a primeira equipe americana em décadas. Tem se mantido como uma equipe de meio de grid.{'\n'}
                 Pilotos 2025: Esteban Ocon (#31) e Oliver Bearman (#87);{'\n'}
                 Piloto reserva: Pietro Fittipaldi;{'\n'}
@@ -24,9 +24,10 @@ export default function Haas({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Esteban Ocon</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Oliver Bearman</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('EstebanOco')}>Esteban Ocon</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('OliverBea')}>Oliver Bearman</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

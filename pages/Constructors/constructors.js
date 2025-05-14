@@ -24,7 +24,6 @@ export default function Construtores({navigation}) {
                       <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('RedBull')}>Red Bull</Text></TouchableOpacity>
                       <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Sauber')}>Sauber</Text></TouchableOpacity>
                       <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Williams')}>Williams</Text></TouchableOpacity>
-                      <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('OldConst')}>Equipes Antigas</Text></TouchableOpacity>
 
                       <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
                   </View>

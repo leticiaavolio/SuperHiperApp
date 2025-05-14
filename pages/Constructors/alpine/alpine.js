@@ -15,7 +15,7 @@ export default function Alpine({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Alpine!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Alpine Renault</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/alpines.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: Sucessora da Renault, a Alpine busca consolidar-se como uma equipe competitiva. Enfrenta desafios de consistência e desempenho.{'\n'}
                 Pilotos 2025: Pierre Gasly (#10) e Franco Colapinto (#43);{'\n'}
                 Piloto reserva: Jack Doohan;{'\n'}
@@ -24,9 +24,10 @@ export default function Alpine({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Pierre Gasly</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Franco Colapinto</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('PierreGas')}>Pierre Gasly</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('FrancoCol')}>Franco Colapinto</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

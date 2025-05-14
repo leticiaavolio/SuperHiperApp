@@ -15,7 +15,7 @@ export default function RedBull({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Red Bull!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Red Bull Racing</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/redbull.jpg")} style={styles.img}/>
                 <Text style={styles.para}>Histórico:  Desde 2005, a Red Bull se estabeleceu como uma potência, conquistando múltiplos títulos com Sebastian Vettel e Max Verstappen.{'\n'}
                 Pilotos 2025:  Max Verstappen (#01) e Yuki Tsunoda (#22);{'\n'}
                 Piloto reserva: [Não confirmado];{'\n'}
@@ -24,9 +24,10 @@ export default function RedBull({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Max Verstappen</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Yuki Tsunoda</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('MaxVer')}>Max Verstappen</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('YukiTsu')}>Yuki Tsunoda</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

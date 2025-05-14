@@ -15,7 +15,7 @@ export default function Williams({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página da Williams!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Williams Mercedes</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
+                <Image source={require("../../../assets/imgs/williams.webp")} style={styles.img}/>
                 <Text style={styles.para}>Histórico: Uma das equipes mais tradicionais, com destaque nas décadas de 80 e 90. Atualmente, busca retornar à competitividade.{'\n'}
                 Pilotos 2025: Carlos Sainz (#55) e Alexander Albon (#23);{'\n'}
                 Piloto reserva: [Não confirmado];{'\n'}
@@ -24,9 +24,10 @@ export default function Williams({navigation}) {
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Alex Albon</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Carlos Sainz</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('AlexAlb')}>Alex Albon</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('CarlosSai')}>Carlos Sainz</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>

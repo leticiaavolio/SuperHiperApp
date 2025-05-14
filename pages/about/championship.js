@@ -42,6 +42,7 @@ export default function Regras({navigation}) {
                                         10. Kick Sauber – 6 pontos</Text>
                 </View>
                 <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View> 

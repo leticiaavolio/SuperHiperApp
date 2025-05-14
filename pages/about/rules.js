@@ -34,6 +34,7 @@ export default function Regras({navigation}) {
                 <Text style={styles.para}>Durante a corrida, os pilotos devem respeitar limites como velocidade no pit stop, bandeiras de sinalização e defesas de posição. As ultrapassagens devem ser feitas de forma limpa, sem tirar o outro piloto da pista. Infrações podem resultar em penalizações, como tempo extra, passagem pelos boxes (drive-through) ou até desclassificação. Em condições perigosas, a corrida pode ser neutralizada com o safety car ou interrompida com bandeira vermelha. Os pilotos também devem usar pneus de diferentes compostos e realizar pelo menos uma troca obrigatória durante a corrida (exceto em condições de chuva).</Text>
                 </View>
                 <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View> 

@@ -15,18 +15,19 @@ export default function Regras({navigation}) {
                 <Text style={styles.title}>Bem-Vindo a página do Campeonato Atual da Formula 1!</Text>
                 <View style={styles.contentContainer}>
                 <Text style={styles.titleP}>Campeonato de Pilotos</Text>
-                <Image source={require("../../../assets/imgs/senna.jpeg")} style={styles.img}/>
-                <Text style={styles.para}>Histórico: Sucessora da Renault, a Alpine busca consolidar-se como uma equipe competitiva. Enfrenta desafios de consistência e desempenho.{'\n'}
-                Pilotos 2025: Pierre Gasly (#10) e Franco Colapinto (#43);{'\n'}
-                Piloto reserva: Jack Doohan;{'\n'}
-                Piloto mais vitorioso: Fernando Alonso (17 vitórias pela Renault/Alpine);{'\n'}
-                Estatísticas: 2 títulos de Construtores, 2 títulos de Pilotos, 35 vitórias em GPs.{'\n'}</Text>
+                <Image source={require("../../../assets/imgs/racingbulls.webp")} style={styles.img}/>
+                <Text style={styles.para}>Histórico: A Racing Bulls é uma equipe italiana de Fórmula 1 com sede em Faenza. Sua origem remonta à equipe Minardi, que competiu de 1985 a 2005.{'\n'}
+                Pilotos 2025: Isack Hadjar (#06) e Liam Lawson (#30);{'\n'}
+                Piloto reserva: Ayumu Iwasa;{'\n'}
+                Piloto mais vitorioso: Nenhum;{'\n'}
+                Estatísticas: Nenhum título de Construtores ou Pilotos, 0 vitórias em GPs..{'\n'}</Text>
             </View>
             <View style={styles.buttonContainer}>
                     <Text style={styles.titleP}>Confira os Pilotos!</Text>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('History')}>Pierre Gasly</Text></TouchableOpacity>
-                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('Rules')}>Franco Colapinto</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('IsackHad')}>Isack Hadjar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.navigate('LiamLaw')}>Liam Lawson</Text></TouchableOpacity>
                     <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.goBack()}>Voltar</Text></TouchableOpacity>
+                    <TouchableOpacity styles={styles.button}><Text style={styles.buttonText} onPress={() => navigation.replace('Home')}>Voltar ao Início</Text></TouchableOpacity>
             </View>
             <Footer/>
         </View>
